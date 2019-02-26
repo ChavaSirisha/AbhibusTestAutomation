@@ -26,7 +26,7 @@ public class homePageTest extends testBase {
 		searchPageObj = new searchPage();
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void validateLogoTooltip() {
 		Assert.assertEquals(homePageObj.validateLogoTooltip(), prop.getProperty("abhibusLogoTooltip"));
 	}
