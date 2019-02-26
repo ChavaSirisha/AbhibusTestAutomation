@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AbhibusAutomation">
+	<listeners>
+		<listener class-name="com.abhibus.qa.reports.extentReportListener"/> 
+	</listeners>
+	<test name="AbhibusTest">
+	
+		<parameter name="leavingFrom" value="Vijayawada"></parameter>
+		<parameter name="goingTo" value="Vizag"></parameter>
+	
+		<classes>
+			<class name="com.abhibus.qa.testcases.homePageTest"></class> 
+			<class name="com.abhibus.qa.testcases.searchPageTest"></class>
+		</classes>
+	</test>
+</suite>
